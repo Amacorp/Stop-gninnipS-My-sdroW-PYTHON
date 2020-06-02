@@ -26,3 +26,20 @@ def spin_words(sentence):
             new.append(word)
     string = " ".join(new)
     return string
+
+
+or
+
+def spin_words(sentence):
+    res = []
+    for word in sentence.split(' '):
+        if len(word) > 5:
+            word = word[::-1]
+            res.append(word)
+    return ' '.join(res)
+print(spin_words("Welcome sroirraw wollef yeH"))
+
+
+
+
+
